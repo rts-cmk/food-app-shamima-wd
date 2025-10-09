@@ -1,0 +1,218 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  color: #2e2e2e;
+  overflow-x: hidden;
+}
+
+.profile-container {
+  display: flex;
+  width: 360px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+  margin-inline: auto;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease forwards;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.profile-header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #ff1744, #ff6a00);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-btn,
+.settings-btn {
+  position: absolute;
+  top: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.back-btn {
+  left: 20px;
+}
+
+.settings-btn {
+  right: 20px;
+}
+
+.back-btn img,
+.settings-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.profile-pic-wrapper {
+  background: #fff;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1s ease forwards;
+}
+
+.profile-pic {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.profile-form {
+  width: 85%;
+  margin-top: 30px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2e2e2e;
+  background: #fff;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  padding: 0 10px;
+}
+
+.password-field input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 12px 6px;
+}
+
+.lock-icon {
+  color: #777;
+  font-size: 18px;
+}
+
+.profile-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0 60px;
+  width: 90%;
+}
+
+.edit-btn,
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  padding: 14px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background: #2e2e2e;
+  color: #fff;
+}
+
+.edit-btn img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
+.logout-btn {
+  border: 2px solid #ff3b30;
+  color: #ff3b30;
+  background: none;
+}
+
+.logout-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.edit-btn:active,
+.logout-btn:active {
+  transform: scale(0.96);
+  opacity: 0.85;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1s ease forwards;
+}
+
+.slide-up-delay {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1s ease 0.2s forwards;
+}
+
+.slide-up-delay2 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1s ease 0.4s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-pic {
+    width: 95px;
+    height: 95px;
+  }
+
+  .edit-btn,
+  .logout-btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
