@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodgo - Burger Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="details.css">
+</head>
+
+<body>
+    <div class="details-container">
+     
+        <div class="top-icons">
+            <button class="icon-btn" onclick="navigate('home.html')">
+                <img src="back.png" alt="Back" />
+            </button>
+            <button class="icon-btn">
+                <img src="search.png" alt="Search" />
+            </button>
+        </div>
+
+        <img src="burger1.png" alt="Cheeseburger" class="burger-image" />
+
+        <div class="burger-info">
+            <h2>Cheeseburger Wendy's Burger</h2>
+
+            <div class="rating-time">
+                <img src="star.png" alt="star" />
+                <span>4.9</span>
+                <span class="dot">—</span>
+                <span>26 mins</span>
+            </div>
+
+            <p class="description">
+                The Cheeseburger Wendy's Burger is a classic fast food burger that packs a punch of flavor in every
+                bite.
+                Made with a juicy beef patty cooked to perfection, it's topped with melted American cheese, crispy
+                lettuce,
+                ripe tomato, and crunchy pickles.
+            </p>
+        </div>
+
+        <div class="controls-section">
+            <div class="control-group">
+                <label>Spicy</label>
+                <div class="slider-wrapper">
+                    <span class="spicy-label mild">Mild</span>
+                    <input type="range" min="0" max="2" value="1" class="spicy-slider">
+                    <span class="spicy-label hot">Hot</span>
+                </div>
+            </div>
+
+            <div class="control-group portion">
+                <label>Portion</label>
+                <div class="portion-control">
+                    <button class="portion-btn" onclick="changePortion(-1)">-</button>
+                    <span id="portion">2</span>
+                    <button class="portion-btn" onclick="changePortion(1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-section">
+            <div class="price-tag">$8.24</div>
+            <button class="order-btn">ORDER NOW</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

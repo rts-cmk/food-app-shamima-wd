@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodgo - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+ <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <header class="top-header">
+    <div class="header-left">
+      <h1 class="logo-text">Foodgo</h1>
+      <p>Order your favourite food!</p>
+    </div>
+    <img src="profile.png" alt="User profile" class="profile-pic" onclick="navigate('profile.html')" />
+  </header>
+
+  <div class="search-container">
+    <div class="search-bar">
+      <img src="search.png" alt="search" />
+      <input type="text" placeholder="Search" />
+    </div>
+    <button class="filter-btn">
+      <img src="bar.png" alt="filter" />
+    </button>
+  </div>
+
+
+  <main>
+    <div class="food-grid">
+      <div class="food-card" onclick="openDetails('Cheeseburger', 4.9, 8.24)">
+        <img src="burger1.png" alt="Cheeseburger" />
+        <h3>Cheeseburger</h3>
+        <p>Wendy's Burger</p>
+        <div class="rating">
+          <div class="rating-left">
+            <img src="star.png" alt="star" />
+            <span>4.9</span>
+          </div> <div class="rating-right">
+          <img src="favorite.png" alt="favorite" class="fav-icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card" onclick="openDetails('Veggie Burger', 4.8, 7.50)">
+        <img src="burger2.png" alt="Veggie Burger" />
+        <h3>Hamburger</h3>
+        <p>Veggie Burger</p>
+        <div class="rating">
+          <div class="rating-left">
+            <img src="star.png" alt="star" />
+            <span>4.8</span>
+          </div> <div class="rating-right">
+          <img src="favorite.png" alt="favorite" class="fav-icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card" onclick="openDetails('Chicken Burger', 4.6, 7.99)">
+        <img src="burger3.png" alt="Chicken Burger" />
+        <h3>Hamburger</h3>
+        <p>Chicken Burger</p>
+        <div class="rating">
+          <div class="rating-left">
+            <img src="star.png" alt="star" />
+            <span>4.6</span>
+          </div>
+           <div class="rating-right">
+          <img src="favorite.png" alt="favorite" class="fav-icon" />
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="food-card" onclick="openDetails('Fried Chicken Burger', 4.5, 8.10)">
+        <img src="burger4.png" alt="Fried Chicken Burger" />
+        <h3>Hamburger</h3>
+        <p>Fried Chicken Burger</p>
+        <div class="rating">
+          <div class="rating-left">
+            <img src="star.png" alt="star" />
+            <span>4.5</span>
+          </div>
+          <div class="rating-right">
+          <img src="favorite.png" alt="favorite" class="fav-icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-nav">
+    <button class="nav-btn" onclick="navigate('home.html')"><img src="home.png" alt="Home" /></button>
+    <button class="nav-btn" onclick="navigate('profile.html')"><img src="men.png" alt="Profile" /></button>
+    <button class="center-btn" onclick="navigate('add.html')">+</button>
+    <button class="nav-btn" onclick="navigate('orders.html')"><img src="symbol.png" alt="Orders" /></button>
+    <button class="nav-btn" onclick="navigate('favorites.html')"><img src="heart.png" alt="Favorites" /></button>
+  </footer>
+<script src="main.js"></script>
+</body>
+
+</html>

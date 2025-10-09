@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodgo - Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+    <div class="profile-container fade-in">
+        <div class="profile-header">
+            <button class="back-btn" onclick="goHome()">
+                <img src="back.png" alt="Back" />
+            </button>
+            <div class="profile-pic-wrapper slide-up">
+                <img src="profile.png" alt="Profile Picture" class="profile-pic" />
+            </div>
+            <button class="settings-btn">
+                <img src="sign.png" alt="Search" />
+            </button>
+        </div>
+
+        <form class="profile-form slide-up-delay">
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" value="Sophia Patel" />
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" value="sophiapatel@gmail.com" />
+            </div>
+
+            <div class="input-group">
+                <label>Delivery address</label>
+                <input type="text" value="123 Main St Apartment 4A, New York, NY" />
+            </div>
+
+            <div class="input-group password-group">
+                <label>Password</label>
+                <div class="password-field">
+                    <span class="lock-icon">🔒</span>
+                    <input type="password" value="********" />
+                </div>
+            </div>
+        </form>
+
+        <div class="profile-buttons slide-up-delay2">
+            <button class="edit-btn">
+                Edit Profile <img src="pasted-image.png" alt="Edit Icon" />
+            </button>
+            <button class="logout-btn" onclick="goHome()">
+                Log out <img src="rightarrow.png" alt="Logout Icon" />
+            </button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+   
+</body>
+
+</html>

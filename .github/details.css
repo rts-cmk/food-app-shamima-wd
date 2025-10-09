@@ -1,0 +1,187 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+body {
+background: #fff;
+color: #2d2d2d;
+max-width: 500px;
+margin: auto;
+overflow-x: hidden;
+}
+
+.details-container {
+padding: 20px;
+position: relative;
+}
+
+.top-icons {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.icon-btn {
+background: none;
+border: none;
+padding: 8px;
+cursor: pointer;
+}
+
+.icon-btn img {
+width: 22px;
+height: 22px;
+}
+
+.burger-image {
+display: block;
+width: 100%;
+max-width: 320px;
+margin: 20px auto;
+object-fit: contain;
+}
+
+.burger-info h2 {
+text-align: center;
+font-weight: 600;
+font-size: 27px;
+color: #3a2f2f;
+margin-bottom: 8px;
+}
+
+.rating-time {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 6px;
+color: #777;
+font-size: 14px;
+}
+
+.rating-time img {
+width: 16px;
+}
+
+.description {
+margin-top: 14px;
+color: #666;
+line-height: 1.6;
+font-size: 16px;
+text-align: left;
+}
+
+.controls-section {
+  text-align: left;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin: 25px 0;
+}
+
+.control-group {
+display: flex;
+flex-direction: column;
+}
+
+.control-group label {
+font-weight: 500;
+color: #3a2f2f;
+margin-bottom: 6px;
+}
+
+.slider-wrapper {
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+.spicy-slider {
+width: 120px;
+accent-color: #e53935;
+}
+
+.spicy-label {
+font-size: 12px;
+}
+
+.mild {
+color: green;
+}
+
+.hot {
+color: red;
+}
+
+
+.portion-control {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+.portion-btn {
+background: #e53935;
+color: #fff;
+border: none;
+width: 32px;
+height: 32px;
+border-radius: 8px;
+font-size: 20px;
+cursor: pointer;
+}
+
+#portion {
+font-weight: 600;
+font-size: 16px;
+}
+
+.order-section {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 120px;
+}
+
+.price-tag {
+background: #e53935;
+color: #fff;
+padding: 14px 20px;
+border-radius: 15px;
+font-weight: 600;
+font-size: 16px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.order-btn {
+background: #3C2F2F;
+color: #fff;
+border: none;
+padding: 14px 28px;
+border-radius: 15px;
+font-weight: 600;
+font-size: 15px;
+cursor: pointer;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 250px;
+}
+
+@media (max-width: 400px) {
+.burger-image {
+max-width: 260px;
+}
+
+.price-tag, .order-btn {
+font-size: 14px;
+padding: 12px 18px;
+}
+
+.spicy-slider {
+width: 100px;
+}
+}

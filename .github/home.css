@@ -1,0 +1,236 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    
+    .top-header {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-text {
+      font-family: "Pacifico", cursive;
+      font-size: 40px;
+      color: #3a2f2f;
+    }
+
+    .top-header p {
+      color: #888;
+      font-size: 14px;
+    }
+
+    .profile-pic {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+
+    .search-container {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px auto 25px;
+    }
+
+    .search-bar {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      background: #f3f3f3;
+      padding: 12px 15px;
+      border-radius: 25px;
+    }
+
+    .search-bar img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      background: none;
+      width: 100%;
+      font-size: 15px;
+    }
+
+    .filter-btn {
+      background: #e53935;
+      border: none;
+      border-radius: 15px;
+      padding: 12px;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .filter-btn img {
+      width: 20px;
+    }
+
+  
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      padding: 0 20px 90px;
+    }
+
+    .food-card {
+      background: white;
+      border-radius: 20px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .food-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .food-card h3 {
+      font-weight: 600;
+      margin-top: 10px;
+      color: #2b2b2b;
+    }
+
+    .food-card p {
+      color: #777;
+      font-size: 14px;
+      margin-top: 2px;
+    }
+
+    .rating {
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+
+    .rating-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .rating-left img {
+      width: 16px;
+      margin-right: 4px;
+    }
+    .rating-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .rating-right img {
+      width: 30px;
+      margin-right: 4px;
+    }
+
+    .rating span {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .fav-icon {
+      width: 20px;
+      cursor: pointer;
+    }
+
+    /* FOOTER NAV */
+    .footer-nav {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 500px;
+      background: #e53935;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 100;
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      outline: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .nav-btn img {
+      width: 26px;
+      height: 26px;
+    }
+
+    .center-btn {
+      position: relative;
+      background: #fff;
+      color: #e53935;
+      border: none;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      font-size: 30px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -35px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    @media (max-width: 400px) {
+      .footer-nav {
+        padding: 8px 0;
+      }
+
+      .center-btn {
+        width: 52px;
+        height: 52px;
+        font-size: 26px;
+        margin-top: -30px;
+      }
+
+      .nav-btn img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  
